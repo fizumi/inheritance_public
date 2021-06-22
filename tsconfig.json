@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    // "noUncheckedIndexedAccess": true, // https://stackoverflow.com/a/50647536 試したけど, ライブラリあたりのコードの修正が面倒なので false
+    "baseUrl": ".", // https://nextjs.org/docs/advanced-features/module-path-aliases
+    // "paths": {
+    //   "dist/*": ["src/*"] // https://stackoverflow.com/questions/43281741/how-to-use-paths-in-tsconfig-json
+    // },
+    "plugins": [
+      // https://github.com/emotion-js/emotion/issues/1037#issuecomment-571097172
+      {
+        "name": "typescript-styled-plugin",
+        "lint": {
+          "validProperties": ["label"]
+        }
+      }
+    ],
+    "jsxImportSource": "@emotion/react" // https://emotion.sh/docs/typescript#css-prop
+  },
+  "exclude": ["node_modules", ".next", "bk", "src/utils/xxx/**"], // exclude されていても, included な file から import されていたら, exclude されないので注意（特に, index.ts に import が残っている場合に注意）
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js"]
+}

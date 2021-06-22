@@ -1,0 +1,111 @@
+{
+  "cols": {
+    "id": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"],
+    "name": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D",
+      "E": "E",
+      "F": "F",
+      "G": "G",
+      "H": "H",
+      "I": "I",
+      "J": "J",
+      "K": "K",
+      "L": "L"
+    },
+    "deathDate": {
+      "A": "2019-05-01T00:00:00+09:00",
+      "B": "1926-12-25T00:00:00+09:00",
+      "C": "1927-01-01T00:00:00+09:00",
+      "D": "1989-01-08T00:00:00+09:00",
+      "E": "1990-01-01T00:00:00+09:00",
+      "F": null,
+      "G": null,
+      "H": "1991-01-01T00:00:00+09:00",
+      "I": null,
+      "J": null,
+      "K": null,
+      "L": null
+    },
+    "deathOrder": {
+      "B": "1",
+      "C": "2",
+      "D": "3",
+      "E": "4",
+      "H": "5",
+      "A": "6",
+      "F": "",
+      "G": "",
+      "I": "",
+      "J": "",
+      "K": "",
+      "L": ""
+    },
+    "deathOrderIsLocked": {
+      "A": false,
+      "B": false,
+      "C": false,
+      "D": false,
+      "E": false,
+      "F": false,
+      "G": false,
+      "H": false,
+      "I": false,
+      "J": false,
+      "K": false,
+      "L": false
+    },
+    "portionOfInheritance": {
+      "A": "1",
+      "B": "",
+      "C": "",
+      "D": "",
+      "E": "",
+      "F": "",
+      "G": "",
+      "H": "",
+      "I": "",
+      "J": "",
+      "K": "",
+      "L": ""
+    },
+    "isAlive": {
+      "A": true,
+      "B": true,
+      "C": true,
+      "D": true,
+      "E": true,
+      "F": true,
+      "G": true,
+      "H": true,
+      "I": true,
+      "J": true,
+      "K": true,
+      "L": true
+    },
+    "pseudoParents": {},
+    "pseudoSpouses": {}
+  },
+  "rels": {
+    "isParent": {
+      "B->A": { "type": "実親子", "startDate": null, "endDate": null },
+      "C->A": { "type": "実親子", "startDate": null, "endDate": null },
+      "B->D": { "type": "実親子", "startDate": null, "endDate": null },
+      "C->D": { "type": "実親子", "startDate": null, "endDate": null },
+      "B->E": { "type": "実親子", "startDate": null, "endDate": null },
+      "C->E": { "type": "実親子", "startDate": null, "endDate": null },
+      "D->F": { "type": "実親子", "startDate": null, "endDate": null },
+      "D->G": { "type": "実親子", "startDate": null, "endDate": null },
+      "E->H": { "type": "実親子", "startDate": null, "endDate": null },
+      "H->I": { "type": "実親子", "startDate": null, "endDate": null },
+      "J->F": { "type": "実親子", "startDate": null, "endDate": null },
+      "J->G": { "type": "実親子", "startDate": null, "endDate": null },
+      "K->H": { "type": "実親子", "startDate": null, "endDate": null },
+      "L->I": { "type": "実親子", "startDate": null, "endDate": null }
+    },
+    "marriage": { "D--J": { "endDate": null }, "E--K": { "endDate": null } },
+    "jointAdoption": {}
+  }
+}

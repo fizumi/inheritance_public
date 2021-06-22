@@ -1,0 +1,39 @@
+{
+  "cols": {
+    "id": ["A", "B", "C", "D", "E", "F", "G"],
+    "name": { "A": "A", "B": "B", "C": "C", "D": "D", "E": "E", "F": "F", "G": "G" },
+    "deathDate": {
+      "A": "2020-01-01T00:00:00+09:00",
+      "B": null,
+      "C": "1990-01-01T00:00:00+09:00",
+      "D": null,
+      "E": null,
+      "F": null,
+      "G": null
+    },
+    "deathOrder": { "C": "1", "A": "2", "B": "", "D": "", "E": "", "F": "", "G": "" },
+    "deathOrderIsLocked": {
+      "A": false,
+      "B": false,
+      "C": false,
+      "D": false,
+      "E": false,
+      "F": false,
+      "G": false
+    },
+    "portionOfInheritance": { "A": "3000", "B": "", "C": "", "D": "", "E": "", "F": "", "G": "" },
+    "isAlive": { "A": true, "B": true, "C": true, "D": true, "E": true, "F": true, "G": true },
+    "pseudoParents": {},
+    "pseudoSpouses": {}
+  },
+  "rels": {
+    "isParent": {
+      "C->A": { "type": "実親子", "startDate": null, "endDate": null },
+      "D->A": { "type": "実親子", "startDate": null, "endDate": null },
+      "F->C": { "type": "実親子", "startDate": null, "endDate": null },
+      "G->C": { "type": "実親子", "startDate": null, "endDate": null }
+    },
+    "marriage": { "A--B": { "endDate": null }, "F--G": { "endDate": null } },
+    "jointAdoption": {}
+  }
+}

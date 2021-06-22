@@ -1,0 +1,105 @@
+{
+  "parser": "@typescript-eslint/parser",
+  /// plugins ///
+  // https://github.com/yannickcr/eslint-plugin-react#configuration
+  "plugins": ["@typescript-eslint", "react", "promise", "import"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:react-hooks/recommended", // https://github.com/facebook/react/tree/master/packages/eslint-plugin-react-hooks
+    "plugin:promise/recommended", // https://github.com/xjamundx/eslint-plugin-promise
+    "plugin:import/recommended", // https://github.com/benmosher/eslint-plugin-import
+    "plugin:import/typescript",
+    "prettier"
+  ],
+  "env": {
+    "es6": true,
+    "browser": true,
+    "jest": true,
+    "node": true
+  },
+  "rules": {
+    "react/jsx-uses-react": "error", // https://github.com/yannickcr/eslint-plugin-react#configuration
+    "react/jsx-uses-vars": "error", // https://github.com/yannickcr/eslint-plugin-react#configuration
+    "react/react-in-jsx-scope": 0,
+    "react/display-name": 0,
+    "react/prop-types": 0,
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "@typescript-eslint/explicit-member-accessibility": 0,
+    "@typescript-eslint/indent": 0,
+    "@typescript-eslint/member-delimiter-style": 0,
+    "@typescript-eslint/no-explicit-any": 0,
+    "@typescript-eslint/no-var-requires": 0,
+    "@typescript-eslint/no-use-before-define": 0,
+    "@typescript-eslint/no-unused-vars": [
+      1,
+      {
+        "varsIgnorePattern": "^_",
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "no-console": [
+      0, // transform-remove-console を使用する
+      {
+        "allow": ["warn", "error"]
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["./src/libraries/**"],
+      "rules": {
+        "@typescript-eslint/ban-types": ["off"]
+      }
+    },
+    {
+      "files": ["./src/libraries/my-mui-pickers/**"],
+      "rules": {
+        "@typescript-eslint/no-unused-vars": [
+          2,
+          {
+            "varsIgnorePattern": "^_",
+            "argsIgnorePattern": "^_",
+            "ignoreRestSiblings": true
+          }
+        ],
+        "@typescript-eslint/no-empty-interface": ["off"],
+        "@typescript-eslint/ban-ts-ignore": ["off"],
+        "@typescript-eslint/no-non-null-assertion": ["off"],
+        "@typescript-eslint/explicit-module-boundary-types": ["off"]
+      }
+    },
+    {
+      "files": ["./src/libraries/my-formik*/**"],
+      "rules": {
+        "@typescript-eslint/explicit-module-boundary-types": ["off"]
+      }
+    },
+    {
+      "files": ["**/utils/**"],
+      "rules": { "react-hooks/rules-of-hooks": 0 }
+    },
+    {
+      "files": ["**/hooks/**"],
+      "rules": { "@typescript-eslint/explicit-module-boundary-types": ["off"] }
+    }
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }, // https://qiita.com/tonteki/items/8b2be65ee1ab0c1b5a52
+    "import/resolver": {
+      "node": {
+        "paths": ["."] // https://github.com/vercel/next.js/discussions/13048#discussioncomment-23607
+      }
+    },
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    }
+  },
+  "ignorePatterns": ["**/bk/**"]
+}
+// yarn create next-app --example with-typescript-eslint-jest [app name]
+// yarn add -D eslint-plugin-import eslint-plugin-promise eslint-plugin-react-hooks

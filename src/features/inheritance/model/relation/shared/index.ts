@@ -1,0 +1,6 @@
+export * from './types'
+export * from './utils'
+export * as RID from './RelationID'
+export * as RID2 from './RelationID2to1'
+export type { RelID, DirectedRelID, UndirectedRelID } from './RelationID'
+export type { RelID2to1, DirectedRelID2to1 } from './RelationID2to1'

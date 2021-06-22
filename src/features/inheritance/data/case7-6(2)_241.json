@@ -1,0 +1,91 @@
+{
+  "cols": {
+    "id": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"],
+    "name": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D",
+      "E": "E",
+      "F": "F",
+      "G": "G",
+      "H": "H",
+      "I": "I",
+      "J": "J"
+    },
+    "deathDate": {
+      "A": "2020-01-01T00:00:00+09:00",
+      "B": null,
+      "C": null,
+      "D": null,
+      "E": null,
+      "F": null,
+      "G": null,
+      "H": "1927-01-01T00:00:00+09:00",
+      "I": "1928-01-01T00:00:00+09:00",
+      "J": "1928-01-01T00:00:00+09:00"
+    },
+    "deathOrder": {
+      "H": "1",
+      "I": "2",
+      "J": "3",
+      "A": "4",
+      "B": "",
+      "C": "",
+      "D": "",
+      "E": "",
+      "F": "",
+      "G": ""
+    },
+    "deathOrderIsLocked": {
+      "A": false,
+      "B": false,
+      "C": false,
+      "D": false,
+      "E": false,
+      "F": false,
+      "G": false,
+      "H": false,
+      "I": false,
+      "J": false
+    },
+    "portionOfInheritance": {
+      "A": "3000",
+      "B": "",
+      "C": "",
+      "D": "",
+      "E": "",
+      "F": "",
+      "G": "",
+      "H": "",
+      "I": "",
+      "J": ""
+    },
+    "isAlive": {
+      "A": true,
+      "B": true,
+      "C": true,
+      "D": true,
+      "E": true,
+      "F": true,
+      "G": true,
+      "H": true,
+      "I": true,
+      "J": true
+    },
+    "pseudoParents": {},
+    "pseudoSpouses": {}
+  },
+  "rels": {
+    "isParent": {
+      "H->A": { "type": "実親子", "startDate": null, "endDate": null },
+      "I->A": { "type": "実親子", "startDate": null, "endDate": null },
+      "H->C": { "type": "実親子", "startDate": null, "endDate": null },
+      "I->C": { "type": "実親子", "startDate": null, "endDate": null },
+      "I->D": { "type": "実親子", "startDate": null, "endDate": null },
+      "J->D": { "type": "実親子", "startDate": null, "endDate": null }
+    },
+    "marriage": { "A--B": { "endDate": null }, "H--I": { "endDate": null } },
+    "jointAdoption": {}
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "cols": {
+    "id": ["A", "B", "C", "D", "E", "F", "G", "H", "I"],
+    "name": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D",
+      "E": "E",
+      "F": "F",
+      "G": "G",
+      "H": "H",
+      "I": "I"
+    },
+    "deathDate": {
+      "A": "2021-01-01T00:00:00+09:00",
+      "B": "1990-01-01T00:00:00+09:00",
+      "C": "1991-01-01T00:00:00+09:00",
+      "D": null,
+      "E": null,
+      "F": null,
+      "G": null,
+      "H": null,
+      "I": null
+    },
+    "deathOrder": {
+      "B": "1",
+      "C": "2",
+      "A": "3",
+      "D": "",
+      "E": "",
+      "F": "",
+      "G": "",
+      "H": "",
+      "I": ""
+    },
+    "deathOrderIsLocked": {
+      "A": false,
+      "B": false,
+      "C": false,
+      "D": false,
+      "E": false,
+      "F": false,
+      "G": false,
+      "H": false,
+      "I": false
+    },
+    "portionOfInheritance": {
+      "A": "900",
+      "B": "",
+      "C": "",
+      "D": "",
+      "E": "",
+      "F": "",
+      "G": "",
+      "H": "",
+      "I": ""
+    },
+    "isAlive": {
+      "A": true,
+      "B": true,
+      "C": true,
+      "D": true,
+      "E": true,
+      "F": true,
+      "G": true,
+      "H": true,
+      "I": true
+    },
+    "pseudoParents": {},
+    "pseudoSpouses": {}
+  },
+  "rels": {
+    "isParent": {
+      "A->B": { "type": "実親子", "startDate": null, "endDate": null },
+      "A->C": { "type": "実親子", "startDate": null, "endDate": null },
+      "B->D": { "type": "実親子", "startDate": null, "endDate": null },
+      "C->E": { "type": "実親子", "startDate": null, "endDate": null },
+      "C->F": { "type": "実親子", "startDate": null, "endDate": null },
+      "G->B": { "type": "実親子", "startDate": null, "endDate": null },
+      "G->C": { "type": "実親子", "startDate": null, "endDate": null },
+      "H->D": { "type": "実親子", "startDate": null, "endDate": null },
+      "I->E": { "type": "実親子", "startDate": null, "endDate": null },
+      "I->F": { "type": "実親子", "startDate": null, "endDate": null }
+    },
+    "marriage": {},
+    "jointAdoption": {}
+  }
+}

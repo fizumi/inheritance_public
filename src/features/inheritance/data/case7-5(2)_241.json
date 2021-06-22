@@ -1,0 +1,43 @@
+{
+  "cols": {
+    "id": ["A", "B", "C", "D", "E", "F"],
+    "name": { "A": "A", "B": "B", "C": "C", "D": "D", "E": "E", "F": "F" },
+    "deathDate": {
+      "A": "2020-01-01T00:00:00+09:00",
+      "B": null,
+      "C": null,
+      "D": null,
+      "E": null,
+      "F": null
+    },
+    "deathOrder": { "A": "1", "B": "", "C": "", "D": "", "E": "", "F": "" },
+    "deathOrderIsLocked": {
+      "A": false,
+      "B": false,
+      "C": false,
+      "D": false,
+      "E": false,
+      "F": false
+    },
+    "portionOfInheritance": { "A": "3000", "B": "", "C": "", "D": "", "E": "", "F": "" },
+    "isAlive": { "A": true, "B": true, "C": true, "D": true, "E": true, "F": true },
+    "pseudoParents": {},
+    "pseudoSpouses": {}
+  },
+  "rels": {
+    "isParent": {
+      "C->A": { "type": "養親子", "startDate": null, "endDate": null },
+      "D->A": { "type": "養親子", "startDate": null, "endDate": null },
+      "E->A": { "type": "実親子", "startDate": null, "endDate": null },
+      "F->A": { "type": "実親子", "startDate": null, "endDate": null }
+    },
+    "marriage": { "A--B": { "endDate": null } },
+    "jointAdoption": {
+      "C-D->A": {
+        "type": "第817条の3第2項但書等",
+        "startDate": "1927-01-01T00:00:00+09:00",
+        "endDate": null
+      }
+    }
+  }
+}

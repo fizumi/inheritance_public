@@ -1,0 +1,5 @@
+fitty は width にしか対応していないため、修正
+読みやすくするため、TypeScript 化
+
+修正対象
+https://github.com/rikschennink/fitty/pull/69
