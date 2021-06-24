@@ -51,7 +51,7 @@
 #### 入力済みデータの存在場所を分かりやすくする工夫
 
 入力データの表示（[Chip](https://next--material-ui.netlify.app/components/chips/#main-content)）をホバーすると、他の場所に存在する同一内容の Chip を強調表示する機能。
-（[react-hook-form と同一のオブザーバーパターン](https://github.com/react-hook-form/react-hook-form/blob/master/src/utils/Subject.ts)を利用して不要な再レンダリングを最小限に抑えています。）
+（[react-hook-form と同一のオブザーバ・パターン](https://github.com/react-hook-form/react-hook-form/blob/master/src/utils/Subject.ts)を利用して不要な再レンダリングを最小限に抑えています。）
 
 ## 使用技術一覧
 
