@@ -29,7 +29,7 @@
 
 ![RedoUndo機能](public/images/6-RedoUndo機能.gif)
 
-[formik](https://formik.org/docs/overview) と組み合わせて使用できる custom hook（[useHistory.ts](src/utils/react/hooks/useHistory.ts)）を自作。
+custom hook（[useHistory.ts](src/utils/react/hooks/useHistory.ts)）を自作。
 
 ### バリデーション機能
 
